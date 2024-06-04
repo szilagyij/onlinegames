@@ -89,3 +89,156 @@ body {
     padding: 10px 20px;
     font-size: 1rem;
 }
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: slideIn 0.5s forwards;
+}
+
+
+.insideboard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    width: 100px; 
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+.asztal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+    width: 250px; 
+    height: 125px;
+}
+
+.current,
+.pickup {
+    width: 50px; 
+    height: 50px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pickup img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.current {
+    top: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.current img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
+.pickup {
+    bottom: 10px;
+    right: 10px;
+}
+.player1 {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100px;
+    background-color: #d3d3d3;
+    display: flex; /* flexbox layout */
+    flex-direction: row; /* Kártyák egymás mellé rendezése */
+    flex-wrap: wrap; /* Ha több kártya is elfér a sorban, tördeljük őket */
+    justify-content: center; /* Kártyák középre igazítása */
+    align-items: center; /* Kártyák középre igazítása */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+
+
+}
+
+.player2 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 100px;
+    background-color: #d3d3d3;
+    
+}
+
+.player3 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    background-color: #d3d3d3;
+}
+
+.player4 {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 100px;
+    background-color: #d3d3d3;
+}
+.card{
+    margin-right: 10px;
+    width: 90px;
+    height: 100px;
+    display: inline-block;
+}
+
+.color-box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+.popup {
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
